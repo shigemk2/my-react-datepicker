@@ -1,23 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+var React = require('react');
+var ReactDOM = require('react-dom');
+var DatePicker = require('react-datepicker');
+var moment = require('moment');
 
-const Name = React.createClass({
+require('react-datepicker/dist/react-datepicker.css');
+
+var HelloWorld = React.createClass({
+    displayName: 'Example',
+
+    getInitialState: function() {
+        return {
+            startDate: moment()
+        };
+    },
+
+    handleChange: function(date) {
+        this.setState({
+            startDate: date
+        });
+    },
+
     render: function() {
-        return (
-            <span>{this.props.name}</span>
-        );
+        return <DatePicker
+                   selected={this.state.startDate}
+                   onChange={this.handleChange} />;
     }
 });
-const HelloWorld = React.createClass({
-    render: function() {
-        return (
-            <div>
-                <h1>Hello, world!</h1>
-                <Name name="Test" />
-            </div>
-        );
-    }
-});
+
 ReactDOM.render(
     <HelloWorld />,
     document.getElementById('content')
