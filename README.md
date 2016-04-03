@@ -1,13 +1,6 @@
-# my-react-template
+# my-react-datepicker-sample
 
-Reactのオレオレテンプレート
+例のカレンダープラグイン moment使ってる(日付比較のアレ)
 
-ReactとReactDOMの違い
+https://github.com/Hacker0x01/react-datepicker
 
-http://www.shigemk2.com/entry/memo_React_vs_ReactDOM
-
-Reactチュートリアルをgulpとかbrowserifyとかを使って自動変換
-
-http://qiita.com/ma-tu/items/52f9c847e74b651d923f
-
-http://qiita.com/masato/items/35b0900e3a7282b33bf8
