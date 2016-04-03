@@ -2,8 +2,9 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var DatePicker = require('react-datepicker');
 var moment = require('moment');
+var cssify = require('cssify')
 
-// require('react-datepicker/dist/react-datepicker.css');
+cssify.byUrl('dist/react-datepicker.min.css');
 
 var HelloWorld = React.createClass({
     displayName: 'Example',
